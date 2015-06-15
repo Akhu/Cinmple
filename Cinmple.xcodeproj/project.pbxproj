@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9223C2DE1B2F2F4400785CCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9223C2DD1B2F2F4400785CCF /* AppDelegate.swift */; };
-		9223C2E01B2F2F4400785CCF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9223C2DF1B2F2F4400785CCF /* FirstViewController.swift */; };
 		9223C2E21B2F2F4400785CCF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9223C2E11B2F2F4400785CCF /* SecondViewController.swift */; };
 		9223C2E51B2F2F4400785CCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9223C2E31B2F2F4400785CCF /* Main.storyboard */; };
 		9223C2E71B2F2F4400785CCF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9223C2E61B2F2F4400785CCF /* Images.xcassets */; };
 		9223C2EA1B2F2F4400785CCF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9223C2E81B2F2F4400785CCF /* LaunchScreen.xib */; };
 		9223C2F61B2F2F4400785CCF /* CinmpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9223C2F51B2F2F4400785CCF /* CinmpleTests.swift */; };
+		9223C3011B2F305D00785CCF /* Cinmple.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9223C2FF1B2F305D00785CCF /* Cinmple.xcdatamodeld */; };
+		9223C3031B2F338000785CCF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9223C3021B2F338000785CCF /* Post.swift */; };
+		9223C30B1B2F343400785CCF /* RecentPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9223C30A1B2F343400785CCF /* RecentPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,6 @@
 		9223C2D81B2F2F4400785CCF /* Cinmple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cinmple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9223C2DC1B2F2F4400785CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9223C2DD1B2F2F4400785CCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9223C2DF1B2F2F4400785CCF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		9223C2E11B2F2F4400785CCF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9223C2E41B2F2F4400785CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9223C2E61B2F2F4400785CCF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -38,6 +39,9 @@
 		9223C2EF1B2F2F4400785CCF /* CinmpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinmpleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9223C2F41B2F2F4400785CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9223C2F51B2F2F4400785CCF /* CinmpleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinmpleTests.swift; sourceTree = "<group>"; };
+		9223C3001B2F305D00785CCF /* Cinmple.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cinmple.xcdatamodel; sourceTree = "<group>"; };
+		9223C3021B2F338000785CCF /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		9223C30A1B2F343400785CCF /* RecentPostView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +83,15 @@
 		9223C2DA1B2F2F4400785CCF /* Cinmple */ = {
 			isa = PBXGroup;
 			children = (
+				9223C2FF1B2F305D00785CCF /* Cinmple.xcdatamodeld */,
 				9223C2DD1B2F2F4400785CCF /* AppDelegate.swift */,
-				9223C2DF1B2F2F4400785CCF /* FirstViewController.swift */,
+				9223C30A1B2F343400785CCF /* RecentPostView.swift */,
 				9223C2E11B2F2F4400785CCF /* SecondViewController.swift */,
 				9223C2E31B2F2F4400785CCF /* Main.storyboard */,
 				9223C2E61B2F2F4400785CCF /* Images.xcassets */,
 				9223C2E81B2F2F4400785CCF /* LaunchScreen.xib */,
 				9223C2DB1B2F2F4400785CCF /* Supporting Files */,
+				9223C3021B2F338000785CCF /* Post.swift */,
 			);
 			path = Cinmple;
 			sourceTree = "<group>";
@@ -217,7 +223,9 @@
 			files = (
 				9223C2E21B2F2F4400785CCF /* SecondViewController.swift in Sources */,
 				9223C2DE1B2F2F4400785CCF /* AppDelegate.swift in Sources */,
-				9223C2E01B2F2F4400785CCF /* FirstViewController.swift in Sources */,
+				9223C30B1B2F343400785CCF /* RecentPostView.swift in Sources */,
+				9223C3011B2F305D00785CCF /* Cinmple.xcdatamodeld in Sources */,
+				9223C3031B2F338000785CCF /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +423,7 @@
 				9223C2FB1B2F2F4400785CCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9223C2FC1B2F2F4400785CCF /* Build configuration list for PBXNativeTarget "CinmpleTests" */ = {
 			isa = XCConfigurationList;
@@ -423,8 +432,23 @@
 				9223C2FE1B2F2F4400785CCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9223C2FF1B2F305D00785CCF /* Cinmple.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9223C3001B2F305D00785CCF /* Cinmple.xcdatamodel */,
+			);
+			currentVersion = 9223C3001B2F305D00785CCF /* Cinmple.xcdatamodel */;
+			name = Cinmple.xcdatamodeld;
+			path = ../Cinmple.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9223C2D01B2F2F4400785CCF /* Project object */;
 }
